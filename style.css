@@ -314,7 +314,15 @@ footer {
 }
 /* Mobile view */
 @media (max-width: 500px) 
-{     
+{  
+  h2#about,
+h2#collection,
+h2#features,
+h2#contact {
+  position: relative;
+  padding-top: 80px;   /* equal to header height */
+  margin-top: -80px;   /* pulls section back visually */
+}   
   .about p  {
     color: #decfee;
   }
