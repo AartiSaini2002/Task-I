@@ -347,8 +347,19 @@ footer {
     text-align: center;
   }
    section {
-    scroll-margin-top: 75px; 
+    scroll-margin-top: 80px; 
   }
+  /* tablet and small desktops */
+@media (min-width: 501px) and (max-width: 992px) {
+  .about p  {
+    color: #b794f4;
+  }
+ 
+  .features p,
+  .collection p {
+    color: #c4b5fd;
+  }
+}
 
 
 /* Dark Mode */
