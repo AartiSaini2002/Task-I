@@ -144,7 +144,7 @@ button:focus {
 
 /* About */
 .about {
-  background: #bbddcb;
+  background: #b1dfc7;
   padding: 4rem 1rem;
   text-align: center;
 }
@@ -162,7 +162,7 @@ button:focus {
 
 /* Collection */
 .collection {
-  background: #eee0fd;
+  background: #e3d0f8;
   padding: 4rem 1rem;
   text-align: center;
 }
@@ -177,7 +177,7 @@ button:focus {
   gap: 2rem;
 }
 .card {
-  background: #fff;
+  background: #f4ebea;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -211,7 +211,7 @@ button:focus {
 
 /* Features */
 .features {
-  background: #ece6cc;
+  background: #e1e3d0;
   padding: 4rem 1rem;
 }
 .features h2 {
@@ -312,14 +312,23 @@ footer {
   font-size: 0.9rem;
   text-align: center;
 }
-/* Mobile refinements */
-@media (max-width: 500px) {
-  /* Scale down hero headings */
+/* Mobile view */
+@media (max-width: 500px) 
+{
+  .about p  {
+    color: #cbaaee;
+  }
+ 
+  .features p,
+  .collection p {
+    color: #c7c9ca;
+  }
+  /* hero headings */
   .hero h2 {
     font-size: 2rem;
   }
 
-  /* Scale down section headings */
+  /* section headings */
   .collection h2,
   .about h2,
   .features h2,
@@ -327,18 +336,21 @@ footer {
     font-size: 2rem;
   }
 
-  /* Adjust hero height for smaller screens */
+  /* Adjust hero height for mobile */
   .hero {
     min-height: 70vh;
     padding: 2rem 1rem;
   }
 
-  /* Center footer content on narrow screens */
-  .footer-container {
+  .footer-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
-}
+   section {
+    scroll-margin-top: 80px; 
+  }
+  }
+
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
@@ -364,7 +376,8 @@ footer {
     background: #1f1f1f;
   }
   .about h2, .collection h2, .features h2 {
-    color: #facc15;
+    color: #c49d04;
+    
   }
   footer {
     background: #0f172a;
